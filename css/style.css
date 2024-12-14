@@ -1,0 +1,196 @@
+/** ------Custom style for the whole index page---- */
+[data-theme="dark"] {
+    --main-color: #272b30;
+    --seconde-color: #32383e;
+    --color-text: #fff;
+    --btn-main-color: #272729;
+}
+
+.badge-color {
+    background-color: var(--seconde-color);
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+
+body {
+    font-family: "Comfortaa", cursive;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: var(--main-color);
+    color: var(--color-text);
+    background-color: #272b30;
+}
+
+/** ------        Header section         ---- */
+
+header {
+    height: 30vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/wraper.png');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+
+/** ------         Navbar         ---- */
+
+.mynavbar {
+    background-color: #3A497B !important;
+
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    padding: 15px 10px;
+
+    /* 
+    width: 80%;
+    margin: auto;
+    top: 50px;
+    z-index: 9999; */
+    top: -10px;
+}
+
+
+.mynavbar .navbar-brand {
+    color: white;
+    text-align: left;
+}
+
+.mynavbar .nav-link {
+    color: white;
+    font-size: 12.25px;
+    padding: 8px;
+}
+
+.mynavbar .nav-item:hover .nav-link {
+    color: #0F84B6;
+
+}
+
+.mynavbar ul li .active {
+    color: #0F84B6 !important;
+}
+
+.mynavbar .logo-image {
+    max-width: 40px;
+    margin-right: 5px;
+}
+
+/** ------         Game Card         ---- */
+
+
+.game-section {
+    margin-top: 80px;
+    background-color: #272b30;
+}
+
+
+.game-card {
+    border: 1px solid #19191b;
+
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+    cursor: pointer;
+}
+
+.game-card:hover {
+
+    transform: scale(1.05);
+    filter: grayscale(0);
+
+}
+
+.game-card img {
+    width: 100%;
+}
+
+.game-footer {
+    padding: 8px 16px;
+}
+
+.game-name .free {
+    background-color: #4A6792;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 0.75em;
+    color: white;
+}
+
+.game-name .h6 {
+    color: white;
+    font-size: 1rem;
+}
+
+.game-card .game-p {
+    color: #8C8E91;
+}
+
+.game-footer {
+    border-top: solid 1px #19191b;
+    ;
+}
+
+.game-footer span {
+    background-color: #51585e;
+    padding: 3px;
+    border-radius: 3px;
+    color: white;
+    font-size: 10.5px;
+    font-weight: 700;
+}
+
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+}
+
+.loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #ff3d00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.details {
+    color: white;
+}

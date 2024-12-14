@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--&----------------------       Header section    ------------------->
+    <!--! -----------------      Navbar section     -------------------->
+    <header class="games-header games" id="games"></header>
+    <nav
+      class="navbar navbar-expand-lg position-sticky top-0 z-3 col-md-6 col-lg-9 mynavbar navbar-expand-lg bg-body-tertiary m-auto"
+    >
+      <div class="container">
+        <div class="logo">
+          <img src="./images/logo-sm.png" alt="game" class="logo-image" />
+          <a class="navbar-brand" href="#">GAME REVIEWS</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                data-category="mmorpg"
+                >MMORPG</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="shooter">SHOOTER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="sailing">SAILING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="permadeath"
+                >PERMADEATH</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="superhero"
+                >SUPERHERO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="pixel">PIXEL</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="game-section" id="game-section">
+      <div class="container">
+        <div class="row gy-4" id="AllGames">
+          <div class="col-md-6 col-lg-3">
+            <div class="game-card p-3 rounded-3 bg-transparent">
+              <div class="card-image mb-3 text-center">
+                <img
+                  src="./images/thumbnail.jpg"
+                  class="object-fit-cover h-100 card-img-top"
+                  alt=""
+                />
+              </div>
+              <div class="game-name d-flex justify-content-between">
+                <h3 class="h6 small">GameName</h3>
+                <span class="free">Free</span>
+              </div>
+              <p class="text-center game-p">
+                Tarisland is a free-to-play cross-platform MMORPG developed by
+                Level Infinite and
+              </p>
+              <div class="game-footer d-flex justify-content-between">
+                <span>MMROP</span>
+                <span>PC(windows)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="details d-none">
+      <div class="container">
+        <div class="header d-flex justify-content-between">
+          <h1 class="text-center text-white h3 py-4">Details Game</h1>
+          <button class="btn-close btn-close-white" id="btnClose"></button>
+        </div>
+        <div class="row g-4" id="gameDetail">
+          <div class="col-md-4">
+            <img src="" class="w-100" alt="image detail" />
+          </div>
+          <div class="col-md-8 text-white">
+            <h3>Title : Game</h3>
+            <p>
+              "Category: "
+              <span class="text-bg-info">MMPROG</span>
+            </p>
+            <p>Platform: <span class="badge text-bg-info"> Windows</span></p>
+            <p>Status: <span class="badge text-bg-info"> Live</span></p>
+            <p class="small">
+              Tarisland is a free-to-play cross-platform MMORPG developed by
+              Level Infinite and Published by Tencent. Available on PC and
+              mobile devices, the game allows players to easily move between
+              both, taking the game with them when they can’t be at their desk.
+              The game is designed to appeal to players of MMOs like World of
+              Warcraft, offering players nine playable classes and 18
+              specializations. Each class features an extensive talent tree
+              system and can be customized. Players of existing MMOs will be
+              familiar with the standard tank, DPS, and healer lineup, necessary
+              for the game’s classic raid and dungeon system. Explore a vast
+              game world and solve mysteries. Pick up various trades such as
+              gathering, mining, and crafting, and sell your items on the
+              auction house.
+            </p>
+            <a
+              class="btn btn-outline-warning"
+              target="_blank"
+              href="https://www.freetogame.com/open/tarisland"
+              >Show Game</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
